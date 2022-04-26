@@ -20,27 +20,13 @@ namespace Ener_Otomasyon
         {
             InitializeComponent();
         }
-        public void Insert(List<urunler> list)
-        {
-            DapperPlusManager.Entity<urunler>().Table("Customers");
-            using (IDbConnection db = new SqlConnection("Server=.;Database=dbtest;User Id=sa;Password=123@qaz;"))
-            {
-                db.BulkInsert(list);
-            }
-        }
+        
         private void btn_kaydet_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Insert(tBLURUNBindingSource.DataSource as List<Customer>);
-                MessageBox.Show("Finished !");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
         }
         DataTableCollection tableCollection;
+
         private void btn_file_Click(object sender, EventArgs e)
         {
 
@@ -69,8 +55,26 @@ namespace Ener_Otomasyon
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dt = tableCollection[comboBox1.SelectedItem.ToString()];
-            dataGridView1.DataSource = dt;
+            DataTableCollection tables;
+            DataTable dt = tables[comboBox1.SelectedItem.ToString()];
+            if (dt != null)
+            {
+                List<Urunler> list = new List<Urunler>();
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    Urunler obj = new Urunler();
+                    obj.URUNAD = dt.Rows[i]["URUNAD"].ToString();
+                    obj.URUNNO = dt.Rows[i]["URUNNO"].ToString();
+                    obj.MARKA = dt.Rows[i]["MARKA"].ToString();
+                    obj.MARKA = dt.Rows[i]["MARKA"].ToString();
+                    obj.ADET = dt.Rows[i]["ADET"].ToString();
+                    obj.OZELLIKLER = dt.Rows[i]["OZELLIKLER"].ToString();
+                    obj.NOTLAR = dt.Rows[i]["NOTLAR"].ToString();
+                  
+                    list.Add(obj);
+                }
+                 tBLURUNBindingSource.DataSource = list;
+            }
         }
 
         private void Excel_v2_Load(object sender, EventArgs e)

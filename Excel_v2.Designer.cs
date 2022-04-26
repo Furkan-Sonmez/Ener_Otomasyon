@@ -66,17 +66,17 @@
             this.oZELLIKLERDataGridViewTextBoxColumn,
             this.nOTLARDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tBLURUNBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(790, 353);
+            this.dataGridView1.Size = new System.Drawing.Size(1204, 498);
             this.dataGridView1.TabIndex = 0;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(31, 390);
+            this.comboBox1.Location = new System.Drawing.Point(36, 542);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 1;
@@ -84,7 +84,7 @@
             // 
             // btn_file
             // 
-            this.btn_file.Location = new System.Drawing.Point(218, 365);
+            this.btn_file.Location = new System.Drawing.Point(223, 517);
             this.btn_file.Name = "btn_file";
             this.btn_file.Size = new System.Drawing.Size(75, 23);
             this.btn_file.TabIndex = 2;
@@ -94,7 +94,7 @@
             // 
             // txt_file
             // 
-            this.txt_file.Location = new System.Drawing.Point(31, 362);
+            this.txt_file.Location = new System.Drawing.Point(36, 514);
             this.txt_file.Name = "txt_file";
             this.txt_file.Size = new System.Drawing.Size(121, 22);
             this.txt_file.TabIndex = 3;
@@ -102,7 +102,7 @@
             // Dosya
             // 
             this.Dosya.AutoSize = true;
-            this.Dosya.Location = new System.Drawing.Point(158, 365);
+            this.Dosya.Location = new System.Drawing.Point(163, 517);
             this.Dosya.Name = "Dosya";
             this.Dosya.Size = new System.Drawing.Size(47, 16);
             this.Dosya.TabIndex = 4;
@@ -111,7 +111,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(158, 393);
+            this.label2.Location = new System.Drawing.Point(163, 545);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 16);
             this.label2.TabIndex = 5;
@@ -119,7 +119,7 @@
             // 
             // btn_kaydet
             // 
-            this.btn_kaydet.Location = new System.Drawing.Point(218, 391);
+            this.btn_kaydet.Location = new System.Drawing.Point(223, 543);
             this.btn_kaydet.Name = "btn_kaydet";
             this.btn_kaydet.Size = new System.Drawing.Size(75, 23);
             this.btn_kaydet.TabIndex = 6;
@@ -206,7 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1225, 578);
             this.Controls.Add(this.btn_kaydet);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Dosya);
