@@ -26,7 +26,7 @@ namespace Ener_Otomasyon
             SqlDataReader dr = komut.ExecuteReader();
             if (dr.Read())
             {
-                Form1 frm = new Form1();
+                AnaSayfa frm = new AnaSayfa();
                 frm.Show();
                 this.Hide();
             }
